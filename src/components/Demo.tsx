@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { copy, linkIcon, loader, tick } from "../assets";
-import { useLazyGetSummaryQuery } from "../services/ArticleSlice.js";
+import { copy, linkIcon, loader, tick } from "../assets/index";
+import { useLazyGetSummaryQuery } from "../services/ArticleSlice";
 export default function Demo() {
   type Article = {
     url: string;
@@ -24,10 +24,16 @@ export default function Demo() {
   const [getSummary, { error, isFetching }] = useLazyGetSummaryQuery();
 
   useEffect(() => {
-    const articlesLocalStorage = JSON.parse(localStorage.getItem("articles"));
+    const articlesString = localStorage.getItem("articles");
 
-    if (articlesLocalStorage) {
-      setAllArticles(articlesLocalStorage);
+    if (articlesString !== null) {
+      try {
+        const articlesLocalStorage = JSON.parse(articlesString);
+        setAllArticles(articlesLocalStorage);
+      } catch (error) {
+        console.error("Error parsing JSON from localStorage:", error);
+        // Optionally handle JSON parse errors here
+      }
     }
   }, []);
 
@@ -119,7 +125,8 @@ export default function Demo() {
             something went wrong...
             <br />
             <span className="font-satoshi text-red-400">
-              {error?.data?.error}
+              {(error as { data?: { error?: string } })?.data?.error ||
+                "An unknown error occurred"}
             </span>
           </p>
         ) : (

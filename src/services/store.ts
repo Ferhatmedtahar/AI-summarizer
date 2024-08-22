@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { articleApi } from "./ArticleSlice.js";
 
+import { articleApi } from "./ArticleSlice";
 export const store = configureStore({
   reducer: {
     [articleApi.reducerPath]: articleApi.reducer,
