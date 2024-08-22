@@ -2,6 +2,9 @@
 
 API Summarizer is a web application that allows users to input a link, submit it, and receive a summarized version of the content using RapidAPI. Built with Vite, React, Tailwind CSS, and Redux Toolkit, this project showcases efficient state management and modern frontend development practices.
 
+Visit the app at [AI summarizer](https://elaborate-cuchufli-4b8c7a.netlify.app/)
+
+
 ![API Summarizer](./src/assets/screenShot.png)
 
 ## Features
@@ -27,4 +30,3 @@ API Summarizer is a web application that allows users to input a link, submit it
 2. **Submit the URL:** Click the "Enter" button to send the URL.
 3. **View the Summary:** The app will fetch the summary from RapidAPI and display it on the screen.
 
-Visit the app at [AI summarizer](https://elaborate-cuchufli-4b8c7a.netlify.app/)
