@@ -27,4 +27,4 @@ API Summarizer is a web application that allows users to input a link, submit it
 2. **Submit the URL:** Click the "Enter" button to send the URL.
 3. **View the Summary:** The app will fetch the summary from RapidAPI and display it on the screen.
 
-Visit the app at [AI summarizer](https://dashing-marigold-5884e0.netlify.app/)
+Visit the app at [AI summarizer](https://elaborate-cuchufli-4b8c7a.netlify.app/)
