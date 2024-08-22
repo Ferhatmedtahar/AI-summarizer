@@ -51,7 +51,6 @@ export default function Demo() {
       setAllArticles(updatedAllArticles);
 
       localStorage.setItem("articles", JSON.stringify(updatedAllArticles));
-      setArticle({ ...article, url: "" });
     }
   }
 
