@@ -1,50 +1,30 @@
-# React + TypeScript + Vite
+# API Summarizer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+API Summarizer is a web application that allows users to input a link, submit it, and receive a summarized version of the content using RapidAPI. Built with Vite, React, Tailwind CSS, and Redux Toolkit, this project showcases efficient state management and modern frontend development practices.
 
-Currently, two official plugins are available:
+![API Summarizer](path_to_your_screenshot_image)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Link Input:** Users can input any URL for summarization.
+- **Summarization:** Using RapidAPI, the content of the provided URL is summarized and displayed.
+- **State Management:** Redux Toolkit is used to manage the state throughout the application.
+- **Responsive Design:** Built with Tailwind CSS, the UI is fully responsive.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Technologies Used
 
-- Configure the top-level `parserOptions` property like this:
+- <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="React" width="40" height="40" style="border-radius: 10px; padding: 5px;" /> **React** .
+- <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Vitejs-logo.svg" alt="Vite" width="40" height="40" style="border-radius: 10px; padding: 5px;" /> **Vite**
+- <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="Redux" width="40" height="40" style="border-radius: 10px; padding: 5px;" /> **Redux Toolkit**
+- <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-plain.svg" alt="Tailwind CSS" width="40" height="40" style="border-radius: 10px; padding: 5px;" /> **Tailwind CSS**
+- <img src="https://rapidapi.com/static-assets/images/rapidapi-dark-logo.2872e8edb1b69bdb73f6242a1e1b348d.svg" alt="RapidAPI" width="40" height="40" style="border-radius: 10px; padding: 5px;" /> **RapidAPI**
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Getting Started
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Usage
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. **Input the URL:** Enter the link you want to summarize in the provided input field.
+2. **Submit the URL:** Click the "Enter" button to send the URL.
+3. **View the Summary:** The app will fetch the summary from RapidAPI and display it on the screen.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Visit the app at [AI summarizer](https://memories-nine-xi.vercel.app/)
