@@ -4,6 +4,7 @@ API Summarizer is a web application that allows users to input a link, submit it
 
 Visit the app at [AI summarizer](https://elaborate-cuchufli-4b8c7a.netlify.app/)
 
+---
 
 ![API Summarizer](./src/assets/screenShot.png)
 
