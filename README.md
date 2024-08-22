@@ -2,7 +2,7 @@
 
 API Summarizer is a web application that allows users to input a link, submit it, and receive a summarized version of the content using RapidAPI. Built with Vite, React, Tailwind CSS, and Redux Toolkit, this project showcases efficient state management and modern frontend development practices.
 
-![API Summarizer]('/src/assets/screenShot.png')
+![API Summarizer]('./src/assets/screenShot.png')
 
 ## Features
 
